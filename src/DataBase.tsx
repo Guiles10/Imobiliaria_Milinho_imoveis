@@ -1,0 +1,42 @@
+export const propertiesData = [
+    {
+        id: 1,
+        image: 'https://picsum.photos/250/350',
+        title: 'Apartamento na Praia',
+        area: '80m²',
+        price: 'R$ 350.000,00',
+        level: 'Intermediário',
+    },
+    {
+        id: 2,
+        image: 'https://picsum.photos/250/350',
+        title: 'Casa no Campo',
+        area: '120m²',
+        price: 'R$ 500.000,00',
+        level: 'Alto Padrão',
+    },
+    {
+        id: 3,
+        image: 'https://picsum.photos/250/350',
+        title: 'Cobertura Duplex',
+        area: '200m²',
+        price: 'R$ 1.200.000,00',
+        level: 'Alto Padrão',
+    },
+    {
+    id: 4,
+        image: 'https://picsum.photos/250/350',
+        title: 'Apartamento Compacto',
+        area: '50m²',
+        price: 'R$ 250.000,00',
+        level: 'Intermediário',
+    },
+    {
+        id: 5,
+        image: 'https://picsum.photos/250/350',
+        title: 'Casa de Praia',
+        area: '150m²',
+        price: 'R$ 800.000,00',
+        level: 'Alto Padrão',
+    },
+];
