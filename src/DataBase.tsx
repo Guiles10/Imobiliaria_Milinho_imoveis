@@ -1,0 +1,92 @@
+export const propertiesData = [
+    {
+        id: 1,
+        image: [
+            'https://picsum.photos/250/350?random=1',
+            'https://picsum.photos/250/350?random=2',
+            'https://picsum.photos/250/350?random=3',
+            'https://picsum.photos/250/350?random=4',
+            'https://picsum.photos/250/350?random=5',
+        ],
+        capa: 'https://picsum.photos/250/350',
+        description: 'Descrição do imovel',
+        title: 'Apartamento na Praia',
+        area: 80,
+        price: '350.000,00',
+        level: 'Intermediário',
+        brique: 'venda',
+        tipo: 'Apartamento'
+    },
+    {
+        id: 2,
+        image: [
+            'https://picsum.photos/250/350?random=1',
+            'https://picsum.photos/250/350?random=2',
+            'https://picsum.photos/250/350?random=3',
+            'https://picsum.photos/250/350?random=4',
+            'https://picsum.photos/250/350?random=5',
+        ],
+        capa: 'https://picsum.photos/250/350',
+        description: 'Descrição do imovel',
+        title: 'Casa no Campo',
+        area: 120,
+        price: '500.000,00',
+        level: 'Alto Padrão',
+        brique: 'venda',
+        tipo: 'Apartamento'
+    },
+    {
+        id: 3,
+        image: [
+            'https://picsum.photos/250/350?random=1',
+            'https://picsum.photos/250/350?random=2',
+            'https://picsum.photos/250/350?random=3',
+            'https://picsum.photos/250/350?random=4',
+            'https://picsum.photos/250/350?random=5',
+        ],
+        capa: 'https://picsum.photos/250/350',
+        description: 'Descrição do imovel',
+        title: 'Cobertura Duplex',
+        area: 200,
+        price: '1.200.000,00',
+        level: 'Alto Padrão',
+        brique: 'venda',
+        tipo: 'Apartamento'
+    },
+    {
+        id: 4,
+        image: [
+            'https://picsum.photos/250/350?random=1',
+            'https://picsum.photos/250/350?random=2',
+            'https://picsum.photos/250/350?random=3',
+            'https://picsum.photos/250/350?random=4',
+            'https://picsum.photos/250/350?random=5',
+        ],
+        capa: 'https://picsum.photos/250/350',
+        description: 'Descrição do imovel',
+        title: 'Apartamento Compacto',
+        area: 50,
+        price: '250.000,00',
+        level: 'Intermediário',
+        brique: 'Aluguel',
+        tipo: 'Casa'
+    },
+    {
+        id: 5,
+        image: [
+            'https://picsum.photos/250/350?random=1',
+            'https://picsum.photos/250/350?random=2',
+            'https://picsum.photos/250/350?random=3',
+            'https://picsum.photos/250/350?random=4',
+            'https://picsum.photos/250/350?random=5',
+        ],
+        capa: 'https://picsum.photos/250/350',
+        description: 'Descrição do imovel',
+        title: 'Casa de Praia',
+        area: 150,
+        price: '800.000,00',
+        level: 'Alto Padrão',
+        brique: 'Aluguel',
+        tipo: 'Fazenda'
+    },
+];
