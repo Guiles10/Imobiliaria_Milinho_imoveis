@@ -1,11 +1,12 @@
-import { useEffect, useState } from 'react'
+
 import { Header } from "./components/Header"
 import { Slides } from "./components/Slides"
 import { Cards } from "./components/Cards"
-import { Footer } from "./components/Footer"
+
 import { propertiesData } from './DataBase'
 import { SecBody } from './styledApp'
 import { WhatsApp } from "./components/WhatsApp"
+import { Footer } from "./components/Footer"
 
 function App() {
 
