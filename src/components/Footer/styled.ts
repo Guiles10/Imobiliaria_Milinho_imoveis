@@ -57,4 +57,37 @@ export const StyledFooter = styled.section`
             color: var(--color-black);
         }
     }
+
+    @media (max-width: 800px) {
+        .DivItens{
+            flex-direction: column
+        }
+    }
+
+    @media (max-width: 550px) {
+        .DivFooter{
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+
+            .DivLogo{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+            .DivItens{
+                width: 100%;
+                margin: 0;
+
+                a{
+                    margin: 0;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+        }
+    }
 `

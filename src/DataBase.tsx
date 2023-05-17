@@ -14,7 +14,7 @@ export const propertiesData = [
         area: 80,
         price: '350.000,00',
         level: 'Intermediário',
-        brique: 'venda',
+        brique: 'Venda',
         tipo: 'Apartamento'
     },
     {
@@ -32,7 +32,7 @@ export const propertiesData = [
         area: 120,
         price: '500.000,00',
         level: 'Alto Padrão',
-        brique: 'venda',
+        brique: 'Venda',
         tipo: 'Apartamento'
     },
     {
@@ -50,7 +50,7 @@ export const propertiesData = [
         area: 200,
         price: '1.200.000,00',
         level: 'Alto Padrão',
-        brique: 'venda',
+        brique: 'Venda',
         tipo: 'Apartamento'
     },
     {
@@ -81,7 +81,7 @@ export const propertiesData = [
             'https://picsum.photos/250/350?random=5',
         ],
         capa: 'https://picsum.photos/250/350',
-        description: 'Descrição do imovel',
+        description: 'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.',
         title: 'Casa de Praia',
         area: 150,
         price: '800.000,00',
