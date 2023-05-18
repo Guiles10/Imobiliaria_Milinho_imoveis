@@ -15,13 +15,12 @@ export const StyledHeader = styled.section`
         display: flex;
         flex-direction: row;
         align-items: center;
-        /* justify-content: space-between; */
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .DivLogo  {
         display: flex;
-        /* width: 200px; */
+        width: 200px;
 
         .Logo  {
             display: flex;
@@ -29,7 +28,7 @@ export const StyledHeader = styled.section`
         }
     }
 
-    /* .Nav  {
+    .Nav  {
         width: 500px;
 
         display: flex;
@@ -53,6 +52,11 @@ export const StyledHeader = styled.section`
                     font-size: 18px;
                     line-height: 30px;
                     font-weight: 700;
+                    
+                    :hover{
+                        text-decoration: 3px underline;
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
@@ -81,8 +85,12 @@ export const StyledHeader = styled.section`
             height: 30px;
         }
         .close {
+            color: white;
             width: 30px;
             height: 30px;
+            :hover{
+                transform: scale(1.1);
+            }
         }
     }
     .navMobile{
@@ -90,9 +98,10 @@ export const StyledHeader = styled.section`
         position: absolute;
         right: 10px;
         top: 10px;
-        background-color:  blue;
+        background-color: var(--color-grey-3);
         z-index: 9;
-        padding: 15px;
+        padding: 25px 35px;
+        border-radius: 4px;
 
 
         ul {
@@ -111,10 +120,15 @@ export const StyledHeader = styled.section`
                     font-size: 18px;
                     line-height: 30px;
                     font-weight: 700;
+
+                    :hover{
+                        text-decoration: 3px underline;
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
 
     }
-} */
+}
 `

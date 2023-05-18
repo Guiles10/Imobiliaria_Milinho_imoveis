@@ -14,8 +14,9 @@ export const propertiesData = [
         area: 80,
         price: '350.000,00',
         level: 'Intermediário',
-        brique: 'venda',
-        tipo: 'Apartamento'
+        brique: 'Venda',
+        tipo: 'Apartamento',
+        destaque: true
     },
     {
         id: 2,
@@ -32,8 +33,9 @@ export const propertiesData = [
         area: 120,
         price: '500.000,00',
         level: 'Alto Padrão',
-        brique: 'venda',
-        tipo: 'Apartamento'
+        brique: 'Venda',
+        tipo: 'Apartamento',
+        destaque: false
     },
     {
         id: 3,
@@ -50,8 +52,9 @@ export const propertiesData = [
         area: 200,
         price: '1.200.000,00',
         level: 'Alto Padrão',
-        brique: 'venda',
-        tipo: 'Apartamento'
+        brique: 'Venda',
+        tipo: 'Apartamento',
+        destaque: true
     },
     {
         id: 4,
@@ -69,7 +72,8 @@ export const propertiesData = [
         price: '250.000,00',
         level: 'Intermediário',
         brique: 'Aluguel',
-        tipo: 'Casa'
+        tipo: 'Casa',
+        destaque: false
     },
     {
         id: 5,
@@ -81,12 +85,13 @@ export const propertiesData = [
             'https://picsum.photos/250/350?random=5',
         ],
         capa: 'https://picsum.photos/250/350',
-        description: 'Descrição do imovel',
+        description: 'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.',
         title: 'Casa de Praia',
         area: 150,
         price: '800.000,00',
         level: 'Alto Padrão',
         brique: 'Aluguel',
-        tipo: 'Fazenda'
+        tipo: 'Fazenda',
+        destaque: true
     },
 ];

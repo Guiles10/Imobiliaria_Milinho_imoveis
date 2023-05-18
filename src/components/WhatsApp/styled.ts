@@ -11,7 +11,7 @@ export const StyledBtnWhats = styled.a`
   background-color: white;
   border-radius: 10px;
 
-  z-index: 9999; 
+  z-index: 9; 
   transition: background-color 0.3s ease;
   border: none;
   margin: 0;

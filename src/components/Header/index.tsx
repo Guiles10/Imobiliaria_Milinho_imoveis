@@ -4,14 +4,21 @@ import { useState } from 'react';
 import { AiOutlineAlignLeft } from 'react-icons/ai'
 import { AiOutlineClose } from 'react-icons/ai'
 
-export const Header = () => {
+interface IPropsModal {
+    setModalOpen: React.Dispatch<React.SetStateAction<boolean>>
+    setFilter: React.Dispatch<React.SetStateAction<string>>
+}
+
+export const Header = ({ setModalOpen, setFilter }: IPropsModal ) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [active, setActive] = useState(false);
+
 
     const toggleMenu = () => {
       setMenuOpen(!menuOpen);
       setActive(!active);;
     };
+
 
     return(
         <StyledHeader>
@@ -19,11 +26,12 @@ export const Header = () => {
                 <div className='DivLogo'>
                     <img className='Logo' src={Logo} alt="Milinho Imoveis" />
                 </div>
-                {/* <nav className={`Nav ${menuOpen ? 'open' : ''}`}>
+                <nav className={`Nav ${menuOpen ? 'open' : ''}`}>
                     <ul className='UlHeader'>
-                        <li className='LiHeader'><button>Compra</button></li>
-                        <li className='LiHeader'><button>Aluga</button></li>
-                        <li className='LiHeader'><button>Contato</button></li>
+                        <li className='LiHeader'><button onClick={() => setModalOpen(true)}>Venda</button></li>
+                        <li className='LiHeader'><button onClick={() => setFilter('Todos')}>Todos</button></li>
+                        <li className='LiHeader'><button onClick={() => setFilter('Venda')}>Compra</button></li>
+                        <li className='LiHeader'><button onClick={() => setFilter('Aluguel')}>Aluga</button></li>
                     </ul>
                 </nav>
 
@@ -36,15 +44,15 @@ export const Header = () => {
 
                     <nav className="navMobile">
                         <ul>
-                            <li className='navIten'><button>Compra</button></li>
-                            <li className='navIten'><button>Aluga</button></li>
-                            <li className='navIten'><button>Contato</button></li>
-                            <li className='navIten'><button>Portfolio</button></li>
+                            <li className='navIten'><button onClick={() => setModalOpen(true)}>Venda</button></li>
+                            <li className='navIten'><button onClick={() => setFilter('Todos')}>Todos</button></li>
+                            <li className='navIten'><button onClick={() => setFilter('Venda')}>Compra</button></li>
+                            <li className='navIten'><button onClick={() => setFilter('Aluguel')}>Aluga</button></li>
                         </ul> 
                     </nav>
                 </>
                 :
-                    null} */}
+                    null}
             </div>
         </StyledHeader>
     )
