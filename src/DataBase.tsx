@@ -15,7 +15,8 @@ export const propertiesData = [
         price: '350.000,00',
         level: 'Intermediário',
         brique: 'Venda',
-        tipo: 'Apartamento'
+        tipo: 'Apartamento',
+        destaque: true
     },
     {
         id: 2,
@@ -33,7 +34,8 @@ export const propertiesData = [
         price: '500.000,00',
         level: 'Alto Padrão',
         brique: 'Venda',
-        tipo: 'Apartamento'
+        tipo: 'Apartamento',
+        destaque: false
     },
     {
         id: 3,
@@ -51,7 +53,8 @@ export const propertiesData = [
         price: '1.200.000,00',
         level: 'Alto Padrão',
         brique: 'Venda',
-        tipo: 'Apartamento'
+        tipo: 'Apartamento',
+        destaque: true
     },
     {
         id: 4,
@@ -69,7 +72,8 @@ export const propertiesData = [
         price: '250.000,00',
         level: 'Intermediário',
         brique: 'Aluguel',
-        tipo: 'Casa'
+        tipo: 'Casa',
+        destaque: false
     },
     {
         id: 5,
@@ -87,6 +91,7 @@ export const propertiesData = [
         price: '800.000,00',
         level: 'Alto Padrão',
         brique: 'Aluguel',
-        tipo: 'Fazenda'
+        tipo: 'Fazenda',
+        destaque: true
     },
 ];

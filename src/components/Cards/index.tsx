@@ -15,9 +15,10 @@ interface CardProps {
     price: string;
     level: string;
     description: string;
+    destaque: boolean;
 }
 
-export const Cards = ({ key, id, brique, tipo, capa, image, title, area, price, level, description }: CardProps) => {
+export const Cards = ({ key, id, brique, tipo, capa, image, title, area, price, level, description, destaque }: CardProps) => {
 
     const [showModal, setShowModal] = useState(false);
 
@@ -25,9 +26,10 @@ export const Cards = ({ key, id, brique, tipo, capa, image, title, area, price, 
     return (
         <>
             {showModal ?
-            <Modal key={id} id={id} image={image} title={title} area={area} price={price} level={level} description={description} showModal={showModal} setShowModal={setShowModal}/>
-                :
-            null}
+                <Modal key={id} id={id} image={image} title={title} area={area} price={price} level={level} description={description} showModal={showModal} setShowModal={setShowModal}/>
+            :
+                null
+            }
                 
             <StyledCard >
                 <h1>{tipo} - {brique}</h1>

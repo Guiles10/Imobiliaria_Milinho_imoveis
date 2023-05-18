@@ -168,7 +168,7 @@ export const StyledModal = styled.section`
 
     .contact-button {
         height: 50px;
-        width: 250px;
+        width: 250px; 
         max-width: 95%;
         padding-right: 5px;
         margin-top: 15px;

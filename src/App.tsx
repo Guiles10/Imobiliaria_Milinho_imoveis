@@ -10,35 +10,37 @@ import { Footer } from "./components/Footer"
 import { useState } from "react"
 import { ModalVenda } from "./components/ModalVenda"
 import { Contato } from "./components/Contato"
+import { Highlights } from './components/Highlights'
 
 function App() {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [filter, setFilter] = useState<string>('Todos')
 
   return (
-    <>
+    <>  
       <main>
         <Header setModalOpen={setModalOpen} setFilter={setFilter}/>
         <Slides />
+        <Highlights propertiesData={propertiesData}/> 
         <Contato />
         <SecBody>
           {modalOpen ? <ModalVenda setModalOpen={setModalOpen}/> : null }
-
           <ul className='UlCards'>
               {propertiesData.map((propertie, index) => {
                 if (filter === 'Todos' || propertie.brique == filter){
                   return <Cards
-                    key={index}
-                    id={propertie.id}
-                    brique={propertie.brique}
-                    tipo={propertie.tipo}
-                    capa={propertie.capa}
-                    image={propertie.image}
-                    title={propertie.title}
-                    area={propertie.area}
-                    price={propertie.price}
-                    level={propertie.level}
-                    description={propertie.description}  />
+                          key={index}
+                          id={propertie.id}
+                          brique={propertie.brique}
+                          tipo={propertie.tipo}
+                          capa={propertie.capa}
+                          image={propertie.image}
+                          title={propertie.title}
+                          area={propertie.area}
+                          price={propertie.price}
+                          level={propertie.level}
+                          description={propertie.description}
+                          destaque={propertie.destaque}  />
                 }})}
           </ul>
 

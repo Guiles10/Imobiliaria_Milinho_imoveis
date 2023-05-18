@@ -18,7 +18,7 @@ export const ModalVenda = ({ setModalOpen }: IPropsModal ) => {
             </div>
             <div className="DivInfos">
                 <p>Clique no botão abaixo para entrar em contato com nossos corretores e anunciar meu imóvel</p> 
-                <a className="contact-button" target="_blank" href="https://wa.me/whatsappphonenumber">Anunciar Imóvel</a>
+                <a className="contact-button" href="https://api.whatsapp.com/send?phone=55996950011" target="_blank" rel="noopener noreferrer">Anunciar Imóvel</a>
             </div>
         </div>
     </StyledModalVenda>
