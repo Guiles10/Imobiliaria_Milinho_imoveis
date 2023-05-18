@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledCard = styled.li`
   width: 250px;
   height: 450px;
+  min-width: 250px;
   background-color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   overflow: hidden;

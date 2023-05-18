@@ -37,30 +37,43 @@ export const Modal = ({ id, image, title, area, price, level, description, showM
         setShowModal(!showModal);
     };
 
-    const modalClass = showModal ? "modal show" : "modal hide";
+    const modalClass = showModal ? "modalshow" : "modalhide";
 
     return (
     <StyledModal >
         <div className="DivModal">
-            <div className='DivHeaderModal'>
-                <h1>{title}</h1>
-                <button className="CloseBtn" onClick={toggleModal}>X</button>
-            </div>
-            <div className={modalClass}>
-                <div className="DivImg">
-                    <button className="prev-button" onClick={handlePrev}>&#10094;</button>
-                    <img src={image[currentIndex]} alt={title} />
-                    <button className="next-button" onClick={handleNext}>&#10095;</button>
+                <div className='DivHeaderModal'>
+                    <h1>{title}</h1>
+                    <button className="CloseBtn" onClick={toggleModal}>X</button>
                 </div>
-            </div>
-            <div className="DivInfos">
-                {/* <p>ID: <small>{id}</small></p> */}
-                <p>Area: <small>{area} m²</small></p>
-                <p>Price: <small>R$ {price}</small></p>
-                <p>Level: <small>{level}</small></p>
-                <p>Description: <small>{description}</small></p>
-            </div>
-            <a className="contact-button" href="https://wa.me/whatsappphonenumber"><FaWhatsappSquare className='WhatsApp'/>Enviar Mensagem</a>
+            <section>
+                <div className={modalClass}>
+                    <div className="DivImg">
+                        <button className="prev-button" onClick={handlePrev}>&#10094;</button>
+                        <img src={image[currentIndex]} alt={title} />
+                        <button className="next-button" onClick={handleNext}>&#10095;</button>
+                    </div>
+                </div>
+                <div className="DivInfos">
+                    <div>
+                        <p>Area: </p>
+                        <small>{area} m²</small>
+                    </div>
+                    <div>
+                        <p>Price: </p>
+                        <small>R$ {price}</small>
+                    </div>
+                    <div>
+                        <p>Level: </p>
+                        <small>{level}</small>
+                    </div>
+                    <div>
+                        <p>Description: </p>
+                        <small>{description}</small>
+                    </div>
+                <a className="contact-button" href="https://api.whatsapp.com/send?phone=55996950011" target="_blank" rel="noopener noreferrer"><FaWhatsappSquare className='WhatsApp'/>Mais Informações</a>
+                </div>
+            </section>
         </div>
     </StyledModal>
   );
