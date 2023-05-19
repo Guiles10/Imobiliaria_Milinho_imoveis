@@ -71,7 +71,7 @@ export const Modal = ({ id, image, title, area, price, level, description, showM
                         <p>Description: </p>
                         <small>{description}</small>
                     </div>
-                <a className="contact-button" href="https://api.whatsapp.com/send?phone=55996950011" target="_blank" rel="noopener noreferrer"><FaWhatsappSquare className='WhatsApp'/>Mais Informações</a>
+                <a className="contact-button" href="https://api.whatsapp.com/send?phone=55999076059" target="_blank" rel="noopener noreferrer"><FaWhatsappSquare className='WhatsApp'/>Mais Informações</a>
                 </div>
             </section>
         </div>
