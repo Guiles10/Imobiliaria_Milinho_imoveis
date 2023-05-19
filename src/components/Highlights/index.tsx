@@ -1,4 +1,4 @@
-import { Cards } from '../Cards';
+import { CardSmall } from '../CardSmall';
 import { StyledHighlights} from './styled'
 
 interface HighlightsProps {
@@ -23,25 +23,29 @@ export const Highlights = ({ propertiesData }: HighlightsProp ) => {
     return (
         <StyledHighlights>
             <div className='DivHighlights'>
-                <h1 className='Title'>Melhores Negócios</h1>
-                <ul className='UlCards'>
-                    {propertiesData.map((propertie, index) => {
-                        if (propertie.destaque === true){
-                            return <Cards
-                                    key={index}
-                                    id={propertie.id}
-                                    brique={propertie.brique}
-                                    tipo={propertie.tipo}
-                                    capa={propertie.capa}
-                                    image={propertie.image}
-                                    title={propertie.title}
-                                    area={propertie.area}
-                                    price={propertie.price}
-                                    level={propertie.level}
-                                    description={propertie.description}
-                                    destaque={propertie.destaque}  />
-                    }})}
-                </ul>
+                <div className='ConteinerUL'>
+                    <div className='cinteinerTitle'>
+                        <h1 className='Title'>Melhores Negócios</h1>
+                    </div>
+                    <ul className='UlCards'>
+                            {propertiesData.map((propertie, index) => {
+                                if (propertie.destaque === true){
+                                    return <CardSmall
+                                            key={index}
+                                            id={propertie.id}
+                                            brique={propertie.brique}
+                                            tipo={propertie.tipo}
+                                            capa={propertie.capa}
+                                            image={propertie.image}
+                                            title={propertie.title}
+                                            area={propertie.area}
+                                            price={propertie.price}
+                                            level={propertie.level}
+                                            description={propertie.description}
+                                            destaque={propertie.destaque}  />
+                            }})}
+                    </ul>
+                </div>
             </div>
         </StyledHighlights>
     )
